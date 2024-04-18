@@ -1,3 +1,163 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Home css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+nav .nav-link,
+.navbar-brand {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+
+}
+
+:root {
+  --bgColor: #f1f1f1;
+  --mainColor: rgb(132, 61, 141);
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: 'Montserrat Alternates';
+  background-image: url(../image/bg.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: 0-90px;
+  background-color: rgba(255, 255, 255, 0.9)
+}
+nav .nav-link:hover,
+.navbar-brand:hover {
+  color:rgb(132, 61, 141);
+}
+
+.header-content {
+  height: 100px;
+  margin-top: 120px;
+  font-weight: 700;
+}
+
+.link {
+
+  text-decoration: none;
+  margin-top: 40px;
+  color: rgb(16, 15, 15);
+  display: block;
+  background-color: rgb(132, 61, 141);
+  width: fit-content;
+  text-align: center;
+  padding: 20px 20px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-family: Merriweather Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.col-md-4 img {
+  margin-top: 150px;
+  width: 100%;
+
+}
+
+.col-md-5 {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+
+.about {
+  margin-top: 200px;
+  
+}
+.curved-div {
+  position: relative;
+  background: #ff3c00;
+  color: #FFF;
+  text-align: center;
+  overflow: hidden;
+}
+.curved-div svg {
+  display: block;
+}
+.curved-shape {
+  background-color:var(--bgColor) ;
+  border-radius: 50px; 
+  padding: 20px; 
+  margin: 20px auto; 
+ width: 1000px;
+ height: 500px;
+ margin-top: 300px;
+ margin-right:10%;
+}
+.card-body{
+  padding: 100px;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    height: 80px; 
+    margin-top: 80px; 
+    margin-bottom: 140px;
+  }
+
+  .link {
+    margin-top: 90px;
+  }
+
+  .col-md-4 img {
+    margin-top: 500px; 
+    width: 30%;
+    /* float: left;  */
+    margin-left: 10px;
+    margin-bottom: 10px; 
+  }
+
+  .card-text {
+    width:350px ;
+    height: auto;
+    margin-top: 0 !important;
+    margin-bottom: 50px;
+    display: relative;
+
+  }
+
+  .curved-shape {
+    width: 90%; 
+    height: 500px; 
+    margin-top: 200px;
+    margin-right: auto; 
+    margin-left: auto; 
+  }
+
+  .card-body {
+    float: left;
+    width: 100% !important;
+    font-size: 15px;
+    padding-bottom: 500px;
+    display: absolute;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+  }
+  .card-title{
+      margin-top: auto !important;
+  }
+ 
+.curved-shape .card-body{
+
+  margin-top: 10px;
+}
+
+}
+
+@media (max-width: 430px) {
+  .card-text {
+    width:250px ;
+  }
+}
+@media (max-width: 330px) {
+  .card-text {
+    width:235px ;
+  }
+  .card-body {
+    width: 80% !important;
+  }
+}
